@@ -9,7 +9,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="assets/planeta.png">
+    <link rel="icon" href="assets/universo.png">
+
+    <!--Importando CSS-->
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/styles.css">
 
     <!--Importando fonte-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -18,52 +22,51 @@
 </head>
 
 <body>
-    <header> 
-        <div>
+    <header class="header_container flex">
+        <div class="header_content">
             <div>
                 <a href="#">Universe</a>
             </div>
 
-            <div>
-                <nav>
-                    <ul>
+            <div class="flex">
+                <nav class="menu">
+                    <ul class="menu_list flex">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#projects">Projetos</a></li>
                     </ul>
                 </nav>
 
-                <label>
-                    <input type="checkbox" checked>
-                    <span></span>
+                <label class="switch">
+                    <input type="checkbox" checked> 
+                    <span class="slider round"></span>
                 </label>
             </div>
         </div>
     </header>
 
-    <main>
-        <section>
-            <article> 
-                <h4>Welcome to My Universe</h4>
-                <h1>Different worlds for differents people</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error veniam in voluptatem magni
-                    quisquam</p>
+    <main id="home"> 
+        <section class="home_container"> 
+            <article class="home_content"> 
+                <h4>Olá, seja bem vindo ao meu portifólio</h4>
+                <h4>Meu nome é Mateus Ferreira! </h4>
+                <h1>Desenvolvedor Full Stack JR</h1>
+                <p>Desvendando linhas de código e expandindo horizontes rumo ao infinito digital!</p>
 
-                <a target="_blank" href="https://github.com/mateuzu">Explore</a>
+                <a class="btn" target="_blank" href="https://github.com/mateuzu">Explore</a>
             </article>
-            <article>
-                <img src="" alt="">
+            <article class="home_content">
+                <img class="home_content__img" src="assets/universo.png" alt="">
             </article>
         </section>
 
-        <section>
-            <img alt="">
-            <article>
-                <h1>Who am I?</h1>
+        <section id="about" class="section_container">
+            <img src="assets/github.png">
+            <article class="section_content">
+                <h1>Quem sou eu?</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam odit voluptates incidunt
-                    inventore rem error harum blanditiis accusamus vitae, minus fugit consequatur? Dolorum maiores magni
-                    deleniti modi sit laudantium totam!
+                    Sou um estudante apaixonado por desenvolvimento em busca de oportunidades para aprender, crescer e contribuir para o mundo da tecnologia.
+                    Atualmente, estou aprimorando minhas habilidades em desenvolvimento de software e buscando uma carreira que me permita aplicar e expandir meus conhecimentos nessa área dinâmica.
                 </p>
 
                 <div>
@@ -74,32 +77,27 @@
             </article>
         </section>
 
-        <section>
-            <img alt="">
+        <section id="projects" class="section_container flex">
+            <img src="assets/trabalho-em-progresso.png">
             <article>
-                <h1>Projects</h1>
+                <h1>Projetos</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam odit voluptates incidunt
-                    inventore rem error harum blanditiis accusamus vitae, minus fugit consequatur? Dolorum maiores magni
-                    deleniti modi sit laudantium totam!
+                    Em desenvolvimento....<br>
+                    A ideia é inserir dentro dessa seção meus principais projetos desenvolvidos
                 </p>
 
                 <div>
-                    <a href="">Github</a>
-                    <p>X Seguidores</p>
-                    <p>Y Repositórios</p>
                 </div>
             </article>
         </section>
     </main>
     
-    <footer>
+    <footer class="flex">
         Feito por Mateus Ferreira - 2023 &copy;
         <a href="https://www.linkedin.com/in/mateus-ferreira-a55691234?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BK1%2FATHAkQW2UnLouA31ncg%3D%3D" target="_blank"> 
-            <img src="" alt="">
+            <img class="tm-social" src="assets/linkedin.png" alt="">
         </a>
     </footer>
-
 </body>
 
 </html>
