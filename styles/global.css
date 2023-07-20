@@ -12,6 +12,10 @@
     --blue-200: #60a3bc;
     --blue-500: #3c6382;
     --blue-800: #0a3d62;
+    --blue-900: #0A2647;
+    
+    --purple-800: #27296D;
+    --purple-900: #16213E;
 
     --black-800: #171717;
 
@@ -91,7 +95,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .dark-theme .header_container {
-    background-color: var(--blue-800);
+    background: linear-gradient(to bottom,  var(--blue-900), var(--white));
     border-bottom: 1px solid var(--blue-500);
 }
 
@@ -115,7 +119,7 @@ body::-webkit-scrollbar-thumb {
 
 .dark-theme footer{
     color: var(--white);
-    background-color: var(--blue-800);
+    background: linear-gradient(to bottom,  var(--blue-800), var(--white));
 }
 
 body.dark-theme::-webkit-scrollbar-track {

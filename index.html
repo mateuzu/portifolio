@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="assets/universo.png">
+    <link rel="icon" href="assets/planeta.png">
 
     <!--Importando CSS-->
     <link rel="stylesheet" href="styles/global.css">
@@ -24,7 +24,8 @@
 <body>
     <header class="header_container flex">
         <div class="header_content">
-            <div>
+            <div class="universe">
+                <img class="tm-social" src="assets/planeta.png" alt="">
                 <a href="#">Universe</a>
             </div>
 
@@ -38,7 +39,7 @@
                 </nav>
 
                 <label class="switch">
-                    <input type="checkbox" checked> 
+                    <input type="checkbox" checked onclick="changeTheme()"> 
                     <span class="slider round"></span>
                 </label>
             </div>
@@ -56,25 +57,12 @@
                 <a class="btn" target="_blank" href="https://github.com/mateuzu">Explore</a>
             </article>
             <article class="home_content">
-                <img class="home_content__img" src="assets/universo.png" alt="">
+                <img class="home_content__img" src="assets/astronauta.svg" alt="">
             </article>
         </section>
 
         <section id="about" class="section_container">
-            <img src="assets/github.png">
-            <article class="section_content">
-                <h1>Quem sou eu?</h1>
-                <p>
-                    Sou um estudante apaixonado por desenvolvimento em busca de oportunidades para aprender, crescer e contribuir para o mundo da tecnologia.
-                    Atualmente, estou aprimorando minhas habilidades em desenvolvimento de software e buscando uma carreira que me permita aplicar e expandir meus conhecimentos nessa área dinâmica.
-                </p>
-
-                <div>
-                    <a href="">Github</a>
-                    <p>X Seguidores</p>
-                    <p>Y Repositórios</p>
-                </div>
-            </article>
+            
         </section>
 
         <section id="projects" class="section_container flex">
@@ -98,6 +86,8 @@
             <img class="tm-social" src="assets/linkedin.png" alt="">
         </a>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 
 </html>
