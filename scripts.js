@@ -6,7 +6,7 @@ async function getApiGithub() {
         const perfil = await dadosPerfil.json(); 
         
         let conteudo = `
-        <img  src="${ perfil.avatar_url }" alt="Foto do Perfil do Github">
+        <img class="avatar" src="${ perfil.avatar_url }" alt="Foto do Perfil do Github">
         <article class="section_content">
             <h1>Quem sou eu?</h1>
             <p>
@@ -16,11 +16,11 @@ async function getApiGithub() {
 
             <div class="section_github flex">
                 <a class="btn" href="${ perfil.html_url }" target="_blank">Github</a>
-                <p class="btn btn_info">Seguidores: ${ perfil.followers }</p> 
-                <p class="btn btn_info">Repositórios: ${ perfil.public_repos }</p>
+                <button class="btn"> Seguidores: ${ perfil.followers }</button> 
+                <button class="btn"> Repositórios: ${ perfil.public_repos }</button>
             </div>
-            <div class = "profile">
-                <img src="https://github-readme-stats.vercel.app/api?username=mateuzu&show_icons=true&theme=holi" alt="">
+            <div class="profile">
+            <img src="https://github-readme-stats.vercel.app/api?username=mateuzu&show_icons=true&theme=holi" alt="">
             </div>
         </article>
         `

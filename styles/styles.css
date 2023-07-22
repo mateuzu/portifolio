@@ -24,7 +24,7 @@
 }
 
 .header_container a:hover {
-    color: var(--blue-500);
+    color: var(--white);
 }
 
 .header_content {
@@ -185,12 +185,6 @@ h4 {
     transform: scale(1.2)
 }
 
-.btn_info{
-    @media screen and (max-width:800px) {
-        display: none;
-    }
-}
-
 .home_content__img {
     display: none;
     transition: transform 0.2s ease-in-out;
@@ -222,32 +216,39 @@ h4 {
         justify-content: center;
         padding: 0 1rem;
     }
+}
+
+.section_container .profile img{
+    border-radius: 0%;
+    border: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
     
+    @media screen and (max-width:800px){
+        display: none;
+    }
+}
 
-    .profile{
-        border: 1px solid var(--blue-500);
-        border-radius: 9px;
-        margin: 2rem;
+.section_container button{
+    display: none;
+
+    @media screen and (min-width:800px) {
         display: flex;
-
-        @media screen and (max-width:800px) {
-            display: none;
-        }
+        margin:8px;
+        cursor: default;
     }
+}
 
-    .profile img{
-        border-radius: 0%;
-        border: none;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.2s ease-in-out;
-    }
+.profile{
+    border: 1px solid var(--blue-500);
+    border-radius: 9px;
+    margin: 2rem;
+}
 
-    .profile img:hover{
-        transform: scale(1.1);
-    }
+.profile img:hover{
+    transform: scale(1.1);
 }
 
 .section_container img {
@@ -277,8 +278,21 @@ h1 {
     margin: 1rem 0;
 }
 
+.section_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .section_github {
     justify-content: space-evenly;
+}
+
+.section_content p{
+    @media screen and (max-width:800px) {
+        display: none;
+    }
 }
 
 footer {
@@ -315,4 +329,42 @@ footer {
 #projects{
     margin-top: 5rem;
     align-items: center;
+}
+
+.avatar:hover .menu{
+    display: none;
+}
+
+.loading{
+    display: flex;
+    background-color: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading article{
+    margin-left: 15px;
+}
+
+.loader{
+    display: none;
+
+    @media screen and (min-width: 800px) {
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid var(--blue-500);
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        animation: spin 2s linear infinite;
+        display: block;
+    }
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
